@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 210" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="simBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B192C"/>
+      <stop offset="60%" stop-color="#1E3E62"/>
+      <stop offset="100%" stop-color="#0066FF"/>
+    </linearGradient>
+    <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D2FF"/>
+      <stop offset="100%" stop-color="#3A86FF"/>
+    </linearGradient>
+    <filter id="simGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0066FF" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Card Body with SIM cut-corner -->
+  <path d="M 20 16 
+           H 280 
+           L 320 56 
+           V 190 
+           A 14 14 0 0 1 306 204 
+           H 20 
+           A 14 14 0 0 1 6 190 
+           V 30 
+           A 14 14 0 0 1 20 16 Z" 
+        fill="url(#simBody)" stroke="url(#neonCyan)" stroke-width="1.5" filter="url(#simGlow)"/>
+
+  <!-- Decorative Circuit Wave Lines -->
+  <path d="M 30 170 C 90 140, 150 190, 240 150 S 310 170, 318 160" stroke="#00D2FF" stroke-width="1" opacity="0.3" fill="none"/>
+  <path d="M 40 180 C 110 150, 180 195, 270 160 S 305 180, 318 175" stroke="#3A86FF" stroke-width="1" opacity="0.25" fill="none"/>
+
+  <!-- Contactless NFC Wave -->
+  <path d="M 240 40 A 10 10 0 0 1 240 60" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M 246 35 A 16 16 0 0 1 246 65" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M 252 30 A 22 22 0 0 1 252 70" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Golden Smart Chip -->
+  <g transform="translate(42, 58)">
+    <rect width="58" height="46" rx="8" fill="url(#chipGrad)" stroke="#B45309" stroke-width="1"/>
+    <!-- Chip Micro-circuits -->
+    <line x1="0" y1="23" x2="58" y2="23" stroke="#92400E" stroke-width="1"/>
+    <line x1="20" y1="0" x2="20" y2="46" stroke="#92400E" stroke-width="1"/>
+    <line x1="38" y1="0" x2="38" y2="46" stroke="#92400E" stroke-width="1"/>
+    <rect x="23" y="14" width="12" height="18" rx="2" fill="none" stroke="#92400E" stroke-width="1"/>
+  </g>
+
+  <!-- Brand Title on Card -->
+  <text x="42" y="142" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="16" letter-spacing="1" fill="#FFFFFF">Tele<tspan fill="#00D2FF">Connect</tspan></text>
+  <text x="42" y="160" font-family="'Inter', sans-serif" font-weight="600" font-size="11" letter-spacing="2" fill="#94A3B8">5G ULTRA e-SIM</text>
+
+  <!-- 5G Badge -->
+  <g transform="translate(235, 135)">
+    <rect width="65" height="30" rx="8" fill="#00D2FF" fill-opacity="0.15" stroke="#00D2FF" stroke-width="1.5"/>
+    <text x="32.5" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#00D2FF" text-anchor="middle">5G SA</text>
+  </g>
+</svg>

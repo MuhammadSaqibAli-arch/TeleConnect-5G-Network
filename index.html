@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="TeleConnect - Next-Gen Telecommunication & 5G Network. Explore high-speed internet packages, call and SMS bundles, instant online recharge, and customer self-care dashboard.">
+  <meta name="keywords"
+    content="TeleConnect, Telecom, 5G Network, Internet Packages, Call Bundles, Online Recharge, Mobile Network">
+  <meta name="author" content="TeleConnect">
+  <title>TeleConnect | Connecting People, Empowering Futures</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" role="region" aria-label="Announcement">
+    <div class="container announcement-inner">
+      <div class="announcement-text">
+        <span class="badge badge-accent"><i class="fa-solid fa-bolt"></i> 5G LIVE</span>
+        <span>Recharge online today and get <strong>20% Bonus Data</strong> on all 30-day packages!</span>
+      </div>
+      <div class="announcement-meta">
+        <span><i class="fa-solid fa-headset"></i> 24/7 Helpline: <strong>121</strong></span>
+        <span class="divider">|</span>
+        <span><i class="fa-solid fa-shield-halved"></i> PTA Approved Network</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="TeleConnect Home">
+        <div class="logo-symbol">
+          <i class="fa-solid fa-tower-broadcast"></i>
+          <span class="signal-pulse"></span>
+        </div>
+        <div class="logo-text">
+          <span class="brand-title">Tele<span>Connect</span></span>
+          <span class="brand-sub">5G ULTRA NETWORK</span>
+        </div>
+      </a>
+
+      <!-- Main Navigation Menu (Desktop & Mobile Drawer) -->
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+        <!-- Mobile Drawer Header -->
+        <div class="mobile-nav-header">
+          <div class="brand-logo mobile-drawer-logo">
+            <div class="logo-symbol">
+              <i class="fa-solid fa-tower-broadcast"></i>
+            </div>
+            <div class="logo-text">
+              <span class="brand-title">Tele<span>Connect</span></span>
+              <span class="brand-sub">5G ULTRA NETWORK</span>
+            </div>
+          </div>
+          <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active"><i class="fa-solid fa-house nav-icon"></i>
+              <span>Home</span></a></li>
+          <li class="nav-item"><a href="#packages" class="nav-link"><i class="fa-solid fa-database nav-icon"></i>
+              <span>Internet Plans</span></a></li>
+          <li class="nav-item"><a href="#call-sms" class="nav-link"><i class="fa-solid fa-phone-volume nav-icon"></i>
+              <span>Call & SMS</span></a></li>
+          <li class="nav-item"><a href="#services" class="nav-link"><i class="fa-solid fa-network-wired nav-icon"></i>
+              <span>Services</span></a></li>
+          <li class="nav-item"><a href="#dashboard" class="nav-link"><i class="fa-solid fa-chart-pie nav-icon"></i>
+              <span>Dashboard</span></a></li>
+          <li class="nav-item"><a href="#recharge" class="nav-link"><i class="fa-solid fa-credit-card nav-icon"></i>
+              <span>Recharge</span></a></li>
+          <li class="nav-item"><a href="#support" class="nav-link"><i class="fa-solid fa-headset nav-icon"></i>
+              <span>Support</span></a></li>
+        </ul>
+
+        <!-- Mobile Drawer Footer Actions -->
+        <div class="mobile-nav-footer">
+          <div class="mobile-user-card">
+            <div class="mobile-user-meta">
+              <span class="mobile-user-label">Current Balance</span>
+              <strong class="mobile-user-balance" id="mobile-drawer-balance">PKR 2,450.00</strong>
+            </div>
+            <a href="#recharge" class="btn btn-primary btn-sm mobile-drawer-recharge">
+              <i class="fa-solid fa-bolt"></i> Recharge
+            </a>
+          </div>
+          <div class="mobile-nav-contact">
+            <span><i class="fa-solid fa-headset"></i> 24/7 Helpline: <strong>121</strong></span>
+            <span><i class="fa-solid fa-shield-halved"></i> 5G SA Live</span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Dark / Light Theme Toggle -->
+        <button class="icon-btn theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark and Light Mode"
+          title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Quick Balance / Dashboard Shortcut -->
+        <a href="#dashboard" class="header-balance-chip" title="View Customer Balance">
+          <i class="fa-solid fa-wallet"></i>
+          <span id="nav-balance-val">PKR 2,450</span>
+        </a>
+
+        <!-- Quick Recharge CTA -->
+        <a href="#recharge" class="btn btn-primary btn-sm nav-recharge-cta">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Recharge</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-glow glow-1"></div>
+      <div class="hero-bg-glow glow-2"></div>
+      <div class="container hero-container">
+
+        <!-- Left: Hero Content -->
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="dot-indicator"></span>
+            <span>Next-Generation 5G Standalone Architecture</span>
+          </div>
+
+          <h1 class="hero-heading">
+            Connecting People, <br>
+            <span class="gradient-text">Empowering Futures.</span>
+          </h1>
+
+          <p class="hero-description">
+            Experience peak speeds up to 1.5 Gbps, ultra-low 4ms latency, and crystal-clear VoLTE calling. Seamless
+            connectivity crafted for gamers, creators, enterprises, and everyday moments.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-buttons">
+            <a href="#packages" class="btn btn-primary btn-lg">
+              <span>Explore Packages</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#recharge" class="btn btn-outline btn-lg">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Instant Recharge</span>
+            </a>
+          </div>
+
+          <!-- Hero Trust Metrics / Highlights -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-gauge-high"></i>
+              <div>
+                <strong>1.5 Gbps</strong>
+                <span>Peak Speeds</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-shield-check"></i>
+              <div>
+                <strong>99.99%</strong>
+                <span>Network Uptime</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-globe"></i>
+              <div>
+                <strong>150+</strong>
+                <span>Roaming Lands</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Creative Telecom Visual -->
+        <div class="hero-visual">
+          <div class="visual-wrapper">
+            <!-- Telecom Graphic SVG -->
+            <img src="assets/images/hero-network.svg" alt="TeleConnect 5G Network Illustration" class="hero-network-img"
+              loading="eager">
+
+            <!-- Floating Live Status Badge 1 -->
+            <div class="floating-stat-card card-top-left glass-card">
+              <div class="stat-icon-wrap bg-cyan">
+                <i class="fa-solid fa-wifi"></i>
+              </div>
+              <div class="stat-meta">
+                <span class="stat-title">Current Latency</span>
+                <span class="stat-value">3.8 ms <span class="badge-sub">Ultra Fast</span></span>
+              </div>
+            </div>
+
+            <!-- Floating Live Status Badge 2 -->
+            <div class="floating-stat-card card-bottom-right glass-card">
+              <div class="stat-icon-wrap bg-primary">
+                <i class="fa-solid fa-signal"></i>
+              </div>
+              <div class="stat-meta">
+                <span class="stat-title">Active Coverage</span>
+                <span class="stat-value">Nationwide 5G</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Action Floating Bar Below Hero -->
+      <div class="container">
+        <div class="quick-action-strip glass-card">
+          <div class="quick-action-item">
+            <div class="quick-icon"><i class="fa-solid fa-sim-card"></i></div>
+            <div class="quick-info">
+              <h4>Switch to eSIM</h4>
+              <p>Instant digital activation in 2 mins</p>
+            </div>
+            <a href="#services" class="quick-link"><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+
+          <div class="quick-divider"></div>
+
+          <div class="quick-action-item">
+            <div class="quick-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div class="quick-info">
+              <h4>Quick Easyload</h4>
+              <p>Zero service fees on wallets</p>
+            </div>
+            <a href="#recharge" class="quick-link"><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+
+          <div class="quick-divider"></div>
+
+          <div class="quick-action-item">
+            <div class="quick-icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <div class="quick-info">
+              <h4>Check Usage</h4>
+              <p>Live data & minutes balance</p>
+            </div>
+            <a href="#dashboard" class="quick-link"><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+
+          <div class="quick-divider"></div>
+
+          <div class="quick-action-item">
+            <div class="quick-icon"><i class="fa-solid fa-headset"></i></div>
+            <div class="quick-info">
+              <h4>24/7 Live Support</h4>
+              <p>Talk to our network engineers</p>
+            </div>
+            <a href="#support" class="quick-link"><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY STATS COUNTER SECTION -->
+    <section class="stats-section section-padding" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+
+          <div class="stat-box" data-target="15.8" data-prefix="" data-suffix="M+">
+            <div class="stat-circle-icon"><i class="fa-solid fa-users"></i></div>
+            <h3 class="stat-number"><span class="counter">0</span>M+</h3>
+            <p class="stat-label">Active Subscribers</p>
+            <span class="stat-trend"><i class="fa-solid fa-arrow-trend-up"></i> +18% this year</span>
+          </div>
+
+          <div class="stat-box" data-target="99.99" data-prefix="" data-suffix="%">
+            <div class="stat-circle-icon"><i class="fa-solid fa-shield-heart"></i></div>
+            <h3 class="stat-number"><span class="counter">0</span>%</h3>
+            <p class="stat-label">Network Reliability</p>
+            <span class="stat-trend"><i class="fa-solid fa-circle-check"></i> Zero downtime record</span>
+          </div>
+
+          <div class="stat-box" data-target="12500" data-prefix="" data-suffix="+">
+            <div class="stat-circle-icon"><i class="fa-solid fa-tower-cell"></i></div>
+            <h3 class="stat-number"><span class="counter">0</span>+</h3>
+            <p class="stat-label">5G & 4G Towers</p>
+            <span class="stat-trend"><i class="fa-solid fa-map-pin"></i> 100% District coverage</span>
+          </div>
+
+          <div class="stat-box" data-target="150" data-prefix="" data-suffix="+">
+            <div class="stat-circle-icon"><i class="fa-solid fa-earth-americas"></i></div>
+            <h3 class="stat-number"><span class="counter">0</span>+</h3>
+            <p class="stat-label">Roaming Destinations</p>
+            <span class="stat-trend"><i class="fa-solid fa-plane-departure"></i> Global 5G roaming</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERNET PACKAGES SECTION -->
+    <section class="packages-section section-padding bg-alt" id="packages">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-database"></i> High-Speed Internet Plans</span>
+          <h2 class="section-title">Designed for Seamless Connectivity</h2>
+          <p class="section-desc">
+            Choose from lightning-fast 5G data bundles tailored for light browsing, content streaming, pro-gaming, and
+            enterprise workflows.
+          </p>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="packages-toolbar glass-card">
+          <!-- Category Tabs -->
+          <div class="filter-group" id="package-category-filters" role="tablist">
+            <button class="filter-chip active" data-category="all" role="tab">All Plans</button>
+            <button class="filter-chip" data-category="weekly" role="tab">Weekly</button>
+            <button class="filter-chip" data-category="monthly" role="tab">Monthly</button>
+            <button class="filter-chip" data-category="unlimited" role="tab">Unlimited</button>
+            <button class="filter-chip" data-category="gaming" role="tab">Gaming & Add-ons</button>
+          </div>
+
+          <!-- Search & Sort Controls -->
+          <div class="search-sort-group">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input type="text" id="package-search-input" placeholder="Search plan, GB, price..."
+                aria-label="Search Packages">
+              <button class="clear-search-btn" id="clear-package-search" title="Clear Search"
+                aria-label="Clear Search"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="sort-box">
+              <select id="package-sort-select" aria-label="Sort Packages">
+                <option value="featured">Featured First</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="data-desc">Data: High to Low</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Package Grid (Rendered via Vanilla JS) -->
+        <div class="packages-grid" id="packages-container">
+          <!-- Dynamic cards will be rendered here by script.js -->
+        </div>
+
+        <!-- Empty Search Result Fallback -->
+        <div class="empty-state hidden" id="package-empty-state">
+          <div class="empty-icon"><i class="fa-solid fa-filter-circle-xmark"></i></div>
+          <h3>No matching packages found</h3>
+          <p>Try adjusting your search keywords or switching category filters.</p>
+          <button class="btn btn-outline btn-sm" id="reset-package-filters">Reset All Filters</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CALL & SMS PACKAGES SECTION -->
+    <section class="call-sms-section section-padding" id="call-sms">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-phone-volume"></i> Voice & Messaging</span>
+          <h2 class="section-title">Call & SMS Bundles</h2>
+          <p class="section-desc">
+            Stay in touch with friends, family, and colleagues with HD VoLTE minutes, off-net call allowances, and bulk
+            SMS bundles.
+          </p>
+        </div>
+
+        <!-- Call/SMS Tabs -->
+        <div class="call-sms-tabs" role="tablist">
+          <button class="call-tab-btn active" data-tab="daily"><i class="fa-solid fa-sun"></i> Daily Packages</button>
+          <button class="call-tab-btn" data-tab="weekly"><i class="fa-solid fa-calendar-week"></i> Weekly
+            Packages</button>
+          <button class="call-tab-btn" data-tab="monthly"><i class="fa-solid fa-calendar-days"></i> Monthly
+            Packages</button>
+          <button class="call-tab-btn" data-tab="sms"><i class="fa-solid fa-comments"></i> SMS Bundles</button>
+        </div>
+
+        <!-- Dynamic Call/SMS Cards Container -->
+        <div class="call-sms-grid" id="call-sms-container">
+          <!-- Rendered dynamically by script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section section-padding bg-alt" id="services">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-network-wired"></i> What We Deliver</span>
+          <h2 class="section-title">Comprehensive Telecom Solutions</h2>
+          <p class="section-desc">
+            From consumer smartphones to hyperscale enterprise leased lines, explore our end-to-end telecommunication
+            infrastructure.
+          </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid" id="services-container">
+          <!-- Rendered dynamically via script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CUSTOMER DASHBOARD SECTION (FRONTEND SIMULATION) -->
+    <section class="dashboard-section section-padding" id="dashboard">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="demo-badge">
+            <i class="fa-solid fa-laptop-code"></i> Interactive Frontend State • Persisted via LocalStorage
+          </div>
+          <h2 class="section-title">Customer Self-Care Dashboard</h2>
+          <p class="section-desc">
+            Monitor your live account balances, remaining data allocations, active package status, and recent
+            subscription history in real time.
+          </p>
+        </div>
+
+        <div class="dashboard-layout">
+
+          <!-- Left Column: User Profile & Smart SIM Widget -->
+          <div class="dashboard-sidebar">
+            <!-- Digital SIM Card Component -->
+            <div class="digital-sim-card">
+              <div class="sim-card-header">
+                <span class="sim-network-badge"><i class="fa-solid fa-tower-broadcast"></i> 5G SA Live</span>
+                <span class="sim-chip-icon"><i class="fa-solid fa-microchip"></i></span>
+              </div>
+              <div class="sim-number" id="dash-phone-number">+92 300 1234567</div>
+              <div class="sim-card-footer">
+                <div class="sim-owner">
+                  <span class="sim-owner-label">Subscriber</span>
+                  <span class="sim-owner-name" id="dash-subscriber-name">Ahmed Khan</span>
+                </div>
+                <div class="sim-tier">
+                  <span class="sim-tier-badge" id="dash-sim-tier">5G Platinum eSIM</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Account Controls -->
+            <div class="account-actions-card glass-card">
+              <h4>Account Shortcuts</h4>
+              <div class="action-btn-group">
+                <button class="btn btn-outline btn-sm w-100" id="btn-edit-phone">
+                  <i class="fa-solid fa-pen-to-square"></i> Change Number
+                </button>
+                <a href="#recharge" class="btn btn-primary btn-sm w-100">
+                  <i class="fa-solid fa-plus"></i> Recharge Account
+                </a>
+                <button class="btn btn-ghost btn-sm w-100 text-danger" id="btn-reset-demo"
+                  title="Reset to default dummy values">
+                  <i class="fa-solid fa-rotate-left"></i> Reset Demo Data
+                </button>
+              </div>
+            </div>
+
+            <!-- Active Package Summary Card -->
+            <div class="active-plan-card glass-card">
+              <div class="active-plan-header">
+                <div>
+                  <span class="label-pill">CURRENT SUBSCRIPTION</span>
+                  <h4 id="dash-active-plan-name">Standard Monthly 15GB</h4>
+                </div>
+                <span class="status-indicator-dot" title="Active"></span>
+              </div>
+
+              <div class="active-plan-meta">
+                <div class="meta-row">
+                  <span>Validity Status:</span>
+                  <strong id="dash-plan-expiry">24 Days Remaining</strong>
+                </div>
+                <div class="meta-row">
+                  <span>Monthly Fee:</span>
+                  <strong id="dash-plan-cost">PKR 1,000</strong>
+                </div>
+                <div class="meta-row">
+                  <span>Auto Renewal:</span>
+                  <label class="switch" title="Toggle Auto Renewal">
+                    <input type="checkbox" id="auto-renewal-toggle" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Usage Statistics & Financials -->
+          <div class="dashboard-main">
+
+            <!-- Balance Banner -->
+            <div class="balance-banner glass-card">
+              <div class="balance-left">
+                <span class="balance-tag">MAIN ACCOUNT BALANCE</span>
+                <div class="balance-amount-wrap">
+                  <span class="currency">PKR</span>
+                  <span class="balance-number" id="dash-balance-display">2,450.00</span>
+                </div>
+                <p class="balance-note"><i class="fa-solid fa-circle-check"></i> Sufficient for current renewals</p>
+              </div>
+              <div class="balance-right">
+                <a href="#recharge" class="btn btn-accent btn-md">
+                  <i class="fa-solid fa-bolt"></i>
+                  <span>Top-up Now</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Usage Gauges Grid -->
+            <div class="usage-gauges-grid">
+
+              <!-- Data Gauge -->
+              <div class="usage-card glass-card">
+                <div class="usage-header">
+                  <div class="usage-icon-circle cyan"><i class="fa-solid fa-database"></i></div>
+                  <div class="usage-titles">
+                    <h4>Internet Data</h4>
+                    <span id="dash-data-summary">10.4 GB / 15.0 GB</span>
+                  </div>
+                </div>
+                <div class="usage-progress-bar">
+                  <div class="progress-fill bg-cyan" id="dash-data-bar" style="width: 69%;"></div>
+                </div>
+                <div class="usage-footer">
+                  <span class="usage-percent" id="dash-data-percent">69% Left</span>
+                  <span class="usage-sub">5G High Speed</span>
+                </div>
+              </div>
+
+              <!-- Minutes Gauge -->
+              <div class="usage-card glass-card">
+                <div class="usage-header">
+                  <div class="usage-icon-circle blue"><i class="fa-solid fa-phone"></i></div>
+                  <div class="usage-titles">
+                    <h4>Voice Minutes</h4>
+                    <span id="dash-mins-summary">720 / 1000 Mins</span>
+                  </div>
+                </div>
+                <div class="usage-progress-bar">
+                  <div class="progress-fill bg-blue" id="dash-mins-bar" style="width: 72%;"></div>
+                </div>
+                <div class="usage-footer">
+                  <span class="usage-percent" id="dash-mins-percent">72% Left</span>
+                  <span class="usage-sub">HD VoLTE Included</span>
+                </div>
+              </div>
+
+              <!-- SMS Gauge -->
+              <div class="usage-card glass-card">
+                <div class="usage-header">
+                  <div class="usage-icon-circle violet"><i class="fa-solid fa-comment-sms"></i></div>
+                  <div class="usage-titles">
+                    <h4>SMS Bundle</h4>
+                    <span id="dash-sms-summary">850 / 1000 SMS</span>
+                  </div>
+                </div>
+                <div class="usage-progress-bar">
+                  <div class="progress-fill bg-violet" id="dash-sms-bar" style="width: 85%;"></div>
+                </div>
+                <div class="usage-footer">
+                  <span class="usage-percent" id="dash-sms-percent">85% Left</span>
+                  <span class="usage-sub">All Local Networks</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Transaction History Card -->
+            <div class="history-card glass-card">
+              <div class="history-card-header">
+                <div>
+                  <h3>Subscription & Recharge History</h3>
+                  <p>Recent account transactions, recharges, and active subscriptions</p>
+                </div>
+                <div class="history-filter-pills">
+                  <button class="pill active" data-txfilter="all">All</button>
+                  <button class="pill" data-txfilter="recharge">Recharges</button>
+                  <button class="pill" data-txfilter="subscription">Packages</button>
+                </div>
+              </div>
+
+              <div class="history-table-wrapper">
+                <table class="history-table" id="transactions-table">
+                  <thead>
+                    <tr>
+                      <th>Transaction ID</th>
+                      <th>Activity</th>
+                      <th>Payment Method</th>
+                      <th>Date</th>
+                      <th>Amount</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="transactions-body">
+                    <!-- Rendered dynamically via script.js -->
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="history-footer">
+                <span id="tx-count-display">Showing 4 transactions</span>
+                <button class="btn-text-danger" id="btn-clear-history" title="Clear transaction log">
+                  <i class="fa-solid fa-trash-can"></i> Clear Log
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RECHARGE SYSTEM SECTION (FRONTEND SIMULATION) -->
+    <section class="recharge-section section-padding bg-alt" id="recharge">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-credit-card"></i> Instant Online Top-Up</span>
+          <h2 class="section-title">Recharge Mobile Balance</h2>
+          <p class="section-desc">
+            Instantly top up your TeleConnect prepaid number or pay postpaid bills. Fast, secure, and zero surcharge.
+          </p>
+        </div>
+
+        <div class="recharge-wrapper">
+          <div class="recharge-card glass-card">
+
+            <form id="recharge-form" novalidate>
+
+              <!-- Step 1: Mobile Number -->
+              <div class="form-step-group">
+                <label for="recharge-phone" class="form-label">
+                  <span class="step-num">1</span>
+                  <span>Recipient Mobile Number</span>
+                </label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-mobile-screen-button input-prefix-icon"></i>
+                  <input type="tel" id="recharge-phone" class="form-control"
+                    placeholder="e.g. 0300 1234567 or +92 300 1234567" required autocomplete="tel">
+                  <span class="input-validation-indicator" id="phone-validation-badge"></span>
+                </div>
+                <span class="form-hint" id="phone-hint">Format: 11-digit Pakistani mobile number (03XX-XXXXXXX)</span>
+                <span class="form-error-msg" id="phone-error">Please enter a valid 11-digit mobile number.</span>
+              </div>
+
+              <!-- Step 2: Amount Presets & Custom -->
+              <div class="form-step-group">
+                <label class="form-label">
+                  <span class="step-num">2</span>
+                  <span>Select or Enter Amount (PKR)</span>
+                </label>
+
+                <!-- Quick Amount Chips -->
+                <div class="amount-presets" id="amount-presets-group">
+                  <button type="button" class="preset-chip" data-amount="200">PKR 200</button>
+                  <button type="button" class="preset-chip active" data-amount="500">PKR 500</button>
+                  <button type="button" class="preset-chip" data-amount="1000">PKR 1,000</button>
+                  <button type="button" class="preset-chip" data-amount="2000">PKR 2,000</button>
+                  <button type="button" class="preset-chip" data-amount="3500">PKR 3,500</button>
+                  <button type="button" class="preset-chip" data-amount="5000">PKR 5,000</button>
+                </div>
+
+                <!-- Custom Amount Input -->
+                <div class="custom-amount-wrap">
+                  <span class="currency-tag">PKR</span>
+                  <input type="number" id="recharge-amount-input" class="form-control"
+                    placeholder="Or enter custom amount (50 - 50,000)" min="50" max="50000" value="500" required>
+                </div>
+                <span class="form-error-msg" id="amount-error">Recharge amount must be between PKR 50 and PKR
+                  50,000.</span>
+              </div>
+
+              <!-- Step 3: Payment Method Selector -->
+              <div class="form-step-group">
+                <label class="form-label">
+                  <span class="step-num">3</span>
+                  <span>Payment Gateway</span>
+                </label>
+
+                <div class="payment-methods-grid" id="payment-methods-group">
+
+                  <label class="payment-method-card active">
+                    <input type="radio" name="paymentMethod" value="card" checked>
+                    <div class="method-content">
+                      <div class="method-icon"><i class="fa-solid fa-credit-card"></i></div>
+                      <div class="method-info">
+                        <strong>Debit / Credit Card</strong>
+                        <span>Visa, Mastercard, PayPak</span>
+                      </div>
+                    </div>
+                  </label>
+
+                  <label class="payment-method-card">
+                    <input type="radio" name="paymentMethod" value="wallet">
+                    <div class="method-content">
+                      <div class="method-icon"><i class="fa-solid fa-wallet"></i></div>
+                      <div class="method-info">
+                        <strong>Mobile Wallet</strong>
+                        <span>JazzCash, Easypaisa, Raast</span>
+                      </div>
+                    </div>
+                  </label>
+
+                  <label class="payment-method-card">
+                    <input type="radio" name="paymentMethod" value="scratch">
+                    <div class="method-content">
+                      <div class="method-icon"><i class="fa-solid fa-ticket"></i></div>
+                      <div class="method-info">
+                        <strong>Scratch Card Voucher</strong>
+                        <span>14-digit voucher PIN</span>
+                      </div>
+                    </div>
+                  </label>
+
+                </div>
+              </div>
+
+              <!-- Tax & Fee Breakdown Preview -->
+              <div class="tax-breakdown-card">
+                <div class="tax-row">
+                  <span>Gross Recharge:</span>
+                  <span id="preview-gross-val">PKR 500.00</span>
+                </div>
+                <div class="tax-row text-muted">
+                  <span>Telecom WHT / GST (15%):</span>
+                  <span id="preview-tax-val">- PKR 75.00</span>
+                </div>
+                <div class="tax-row net-balance-row">
+                  <span>Net Credited Balance:</span>
+                  <strong id="preview-net-val">PKR 425.00</strong>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-lg w-100" id="btn-submit-recharge">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Proceed to Recharge (Simulation)</span>
+              </button>
+
+              <p class="recharge-disclaimer">
+                <i class="fa-solid fa-lock"></i> 256-Bit SSL Encrypted. This is a learning demo; no real financial card
+                details will be charged.
+              </p>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE 5G SPEED TEST SIMULATOR WIDGET -->
+    <section class="speedtest-section section-padding">
+      <div class="container">
+        <div class="speedtest-box glass-card">
+          <div class="speedtest-info">
+            <span class="section-tag"><i class="fa-solid fa-gauge-high"></i> Interactive Network Benchmark</span>
+            <h2>Experience True 5G Performance</h2>
+            <p>
+              Test TeleConnect's simulated network throughput, live latency, and jitter. See why our network leads the
+              country in mobile gaming and UHD 8K video streaming.
+            </p>
+            <div class="speed-metrics-row">
+              <div class="speed-metric">
+                <span class="metric-title">Latency</span>
+                <span class="metric-val" id="test-latency">-- ms</span>
+              </div>
+              <div class="speed-metric">
+                <span class="metric-title">Jitter</span>
+                <span class="metric-val" id="test-jitter">-- ms</span>
+              </div>
+              <div class="speed-metric">
+                <span class="metric-title">Upload</span>
+                <span class="metric-val" id="test-upload">-- Mbps</span>
+              </div>
+            </div>
+            <button class="btn btn-accent btn-md mt-4" id="btn-start-speedtest">
+              <i class="fa-solid fa-play"></i> Start Live Speed Test
+            </button>
+          </div>
+
+          <div class="speedtest-visual">
+            <div class="speed-gauge-wrapper">
+              <div class="speed-gauge-dial">
+                <div class="gauge-center-circle">
+                  <span class="speed-reading-num" id="speed-reading">0.0</span>
+                  <span class="speed-reading-unit">Mbps</span>
+                  <span class="speed-reading-status" id="speed-status">Ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US / FEATURES SECTION -->
+    <section class="why-us-section section-padding bg-alt">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-award"></i> The TeleConnect Edge</span>
+          <h2 class="section-title">Why 15 Million Users Trust TeleConnect</h2>
+          <p class="section-desc">
+            We are not just a telecommunication company; we are an infrastructure provider building the foundation for
+            next-decade digital innovation.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="feature-card glass-card">
+            <div class="feature-icon-circle"><i class="fa-solid fa-satellite-dish"></i></div>
+            <h3>Sub-6GHz & mmWave 5G</h3>
+            <p>Dual-band frequencies delivering expansive wide-area coverage alongside hyper-dense urban capacity for
+              crowd events.</p>
+          </div>
+
+          <div class="feature-card glass-card">
+            <div class="feature-icon-circle"><i class="fa-solid fa-ban"></i></div>
+            <h3>Zero Throttling Policy</h3>
+            <p>No sudden slowdowns or hidden bandwidth caps. Stream, game, and upload large files with full
+              unconstrained throughput.</p>
+          </div>
+
+          <div class="feature-card glass-card">
+            <div class="feature-icon-circle"><i class="fa-solid fa-sim-card"></i></div>
+            <h3>Instant eSIM Technology</h3>
+            <p>Switch between personal and business numbers in seconds without physical SIM swaps. Compatible with all
+              modern smartphones.</p>
+          </div>
+
+          <div class="feature-card glass-card">
+            <div class="feature-icon-circle"><i class="fa-solid fa-plane-up"></i></div>
+            <h3>Worry-Free Global Roaming</h3>
+            <p>Automatic network handover across 150+ countries with transparent per-day flat rates. Zero bill shock
+              guaranteed.</p>
+          </div>
+
+          <div class="feature-card glass-card">
+            <div class="feature-icon-circle"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>AI Threat Shield</h3>
+            <p>Built-in telecom carrier firewall filtering spam SMS, robocalls, and malicious phishing links before they
+              reach your handset.</p>
+          </div>
+
+          <div class="feature-card glass-card">
+            <div class="feature-icon-circle"><i class="fa-solid fa-headset"></i></div>
+            <h3>24/7 Human Helpline</h3>
+            <p>No frustrating robot loops. Dial 121 anytime to connect with an empathetic, knowledgeable support
+              engineer.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CUSTOMER TESTIMONIALS SECTION -->
+    <section class="testimonials-section section-padding" id="testimonials">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-heart"></i> Customer Stories</span>
+          <h2 class="section-title">Loved by Gamers, Creators & Teams</h2>
+          <p class="section-desc">
+            Read authentic feedback from subscribers who rely on TeleConnect every single day.
+          </p>
+        </div>
+
+        <div class="testimonials-grid" id="testimonials-container">
+          <!-- Rendered dynamically via script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE FAQ ACCORDION SECTION -->
+    <section class="faq-section section-padding bg-alt" id="faq">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Clear Answers</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">
+            Find answers to commonly asked questions regarding SIM activation, data rollovers, recharge, and USSD
+            commands.
+          </p>
+        </div>
+
+        <div class="faq-accordion" id="faq-accordion">
+          <!-- Rendered dynamically via script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & SUPPORT SECTION -->
+    <section class="support-section section-padding" id="support">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-comments"></i> 24/7 Support Center</span>
+          <h2 class="section-title">We are Here to Help</h2>
+          <p class="section-desc">
+            Have questions about your connection, billing, or enterprise solutions? Send us a message or reach our
+            helpline.
+          </p>
+        </div>
+
+        <div class="support-layout">
+
+          <!-- Contact Info Cards -->
+          <div class="support-info-cards">
+
+            <div class="info-card glass-card">
+              <div class="info-icon"><i class="fa-solid fa-phone-flip"></i></div>
+              <div class="info-details">
+                <h4>Customer Helpline</h4>
+                <p>Call toll-free from any TeleConnect SIM</p>
+                <a href="tel:121" class="info-link">Dial 121 (Free)</a>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-details">
+                <h4>Email Support</h4>
+                <p>Expect a response within 2 business hours</p>
+                <a href="mailto:support@teleconnect.pk" class="info-link">support@teleconnect.pk</a>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="info-details">
+                <h4>WhatsApp Agent</h4>
+                <p>Quick chat for balance and package activation</p>
+                <a href="https://wa.me/923000000121" target="_blank" rel="noopener noreferrer" class="info-link">+92 300
+                  0000121</a>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-details">
+                <h4>Experience Centers</h4>
+                <p>150+ walk-in stores nationwide</p>
+                <span class="store-hours">Open Mon - Sat: 9:00 AM - 9:00 PM</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Form with JS Validation -->
+          <div class="contact-form-wrapper glass-card">
+            <h3>Send Us a Message</h3>
+            <p class="form-subtext">Fill out the form below and our customer support team will get back to you promptly.
+            </p>
+
+            <form id="contact-form" novalidate>
+
+              <div class="form-row">
+                <!-- Full Name -->
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Full Name *</label>
+                  <input type="text" id="contact-name" class="form-control" placeholder="e.g. Fatima Ali" required
+                    minlength="3">
+                  <span class="form-error-msg" id="contact-name-error">Please enter your name (at least 3
+                    characters).</span>
+                </div>
+
+                <!-- Email Address -->
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address *</label>
+                  <input type="email" id="contact-email" class="form-control" placeholder="e.g. fatima@example.com"
+                    required>
+                  <span class="form-error-msg" id="contact-email-error">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <!-- Mobile Number -->
+                <div class="form-group">
+                  <label for="contact-phone" class="form-label">Mobile Number *</label>
+                  <input type="tel" id="contact-phone" class="form-control" placeholder="e.g. 0300 1234567" required>
+                  <span class="form-error-msg" id="contact-phone-error">Please enter an 11-digit mobile number.</span>
+                </div>
+
+                <!-- Subject -->
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject *</label>
+                  <select id="contact-subject" class="form-control" required>
+                    <option value="">-- Choose Subject --</option>
+                    <option value="Billing & Recharge">Billing & Recharge</option>
+                    <option value="Package Activation">Package Activation</option>
+                    <option value="SIM / eSIM Inquiry">SIM / eSIM Inquiry</option>
+                    <option value="Network Coverage">Network Coverage / 5G Speed</option>
+                    <option value="Business / Enterprise">Business & Enterprise Leased Lines</option>
+                    <option value="Other">Other Query</option>
+                  </select>
+                  <span class="form-error-msg" id="contact-subject-error">Please select a subject.</span>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Your Message *</label>
+                <textarea id="contact-message" class="form-control" rows="4"
+                  placeholder="Describe your query or issue in detail (at least 15 characters)..." required
+                  minlength="15"></textarea>
+                <span class="form-error-msg" id="contact-message-error">Message must be at least 15 characters.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg w-100" id="btn-submit-contact">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Submit Support Ticket</span>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SUBSCRIPTION SECTION -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-card glass-card">
+          <div class="newsletter-content">
+            <span class="badge badge-accent"><i class="fa-solid fa-envelope-open-text"></i> Stay Connected</span>
+            <h3>Subscribe for Exclusive Telecom Offers</h3>
+            <p>Get instant alerts on midnight data discounts, flash recharges, and new 5G tower rollouts directly in
+              your inbox.</p>
+          </div>
+          <form class="newsletter-form" id="newsletter-form" novalidate>
+            <div class="newsletter-input-group">
+              <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Enter your email address"
+                required>
+              <button type="submit" class="btn btn-accent btn-md">Subscribe</button>
+            </div>
+            <span class="newsletter-feedback" id="newsletter-feedback"></span>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PROFESSIONAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand Column -->
+        <div class="footer-col brand-col">
+          <a href="#home" class="brand-logo footer-logo">
+            <div class="logo-symbol">
+              <i class="fa-solid fa-tower-broadcast"></i>
+            </div>
+            <div class="logo-text">
+              <span class="brand-title">Tele<span>Connect</span></span>
+              <span class="brand-sub">5G ULTRA NETWORK</span>
+            </div>
+          </a>
+          <p class="footer-tagline">"Connecting People, Empowering Futures."</p>
+          <p class="footer-about">
+            TeleConnect is a forward-thinking telecommunication service provider committed to delivering ultra-fast 5G
+            broadband, affordable bundles, and enterprise connectivity nationwide.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Home Overview</a></li>
+            <li><a href="#packages"><i class="fa-solid fa-angle-right"></i> 5G Internet Plans</a></li>
+            <li><a href="#call-sms"><i class="fa-solid fa-angle-right"></i> Call & SMS Bundles</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Telecom Services</a></li>
+            <li><a href="#dashboard"><i class="fa-solid fa-angle-right"></i> Self-Care Dashboard</a></li>
+            <li><a href="#recharge"><i class="fa-solid fa-angle-right"></i> Online Easyload</a></li>
+          </ul>
+        </div>
+
+        <!-- Telecom Services -->
+        <div class="footer-col">
+          <h4>Services & Add-ons</h4>
+          <ul class="footer-links">
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> 5G Connectivity</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> eSIM Activation</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> International Roaming</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Enterprise Leased Lines</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> VoLTE HD Calling</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Broadband Fiber</a></li>
+          </ul>
+        </div>
+
+        <!-- Regulatory & USSD Shortcuts -->
+        <div class="footer-col">
+          <h4>Quick USSD Codes</h4>
+          <ul class="ussd-list">
+            <li><span>Check Balance:</span> <code>*111#</code></li>
+            <li><span>Check Data:</span> <code>*111*2#</code></li>
+            <li><span>Package Menu:</span> <code>*786#</code></li>
+            <li><span>Free Help Menu:</span> <code>*121#</code></li>
+            <li><span>SIM Verification:</span> <code>*668#</code></li>
+          </ul>
+          <div class="pta-badge">
+            <i class="fa-solid fa-certificate"></i>
+            <span>PTA Licensed Operator • Type Approval Valid</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="footer-legal">
+          <span>&copy; <span id="current-year">2026</span> TeleConnect Corporation. All Rights Reserved.</span>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <span>•</span>
+            <a href="#">Terms of Service</a>
+            <span>•</span>
+            <a href="#">Fair Usage Policy</a>
+            <span>•</span>
+            <a href="#">Customer Charter</a>
+          </div>
+        </div>
+        <!-- <div class="portfolio-credit">
+          <span>Designed with <i class="fa-solid fa-heart text-danger"></i> using <strong>Pure HTML5, CSS3 & Vanilla JavaScript</strong></span>
+        </div> -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- MODALS & DIALOGS -->
+  <!-- ============================================== -->
+
+  <!-- 1. PACKAGE DETAILS & SUBSCRIPTION MODAL -->
+  <div class="modal-backdrop" id="package-modal" role="dialog" aria-modal="true" aria-labelledby="modal-pkg-title">
+    <div class="modal-container glass-card">
+      <button class="modal-close-btn" id="modal-pkg-close" aria-label="Close modal">&times;</button>
+
+      <div class="modal-header">
+        <div class="modal-badge" id="modal-pkg-badge">POPULAR</div>
+        <h3 id="modal-pkg-title">Premium Plan 50GB</h3>
+        <p class="modal-tagline" id="modal-pkg-tagline">Ideal for heavy streaming, multi-device hotspot & 4K gaming</p>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="modal-metric-strip">
+          <div class="metric-pill">
+            <span class="pill-label">Total Data</span>
+            <strong class="pill-val" id="modal-pkg-data">50 GB</strong>
+          </div>
+          <div class="metric-pill">
+            <span class="pill-label">Validity</span>
+            <strong class="pill-val" id="modal-pkg-validity">30 Days</strong>
+          </div>
+          <div class="metric-pill">
+            <span class="pill-label">Price</span>
+            <strong class="pill-val" id="modal-pkg-price">PKR 2,000</strong>
+          </div>
+        </div>
+
+        <div class="modal-details-section">
+          <h4>Plan Perks & Inclusions</h4>
+          <ul class="modal-perks-list" id="modal-pkg-perks">
+            <!-- Dynamic perks -->
+          </ul>
+        </div>
+
+        <div class="modal-ussd-box">
+          <span>Direct Activation Dial Code:</span>
+          <code id="modal-pkg-ussd">*115*50#</code>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-ghost" id="modal-pkg-cancel">Close</button>
+        <button class="btn btn-primary" id="modal-pkg-subscribe-btn">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Subscribe Now</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. RECHARGE CONFIRMATION MODAL -->
+  <div class="modal-backdrop" id="recharge-confirm-modal" role="dialog" aria-modal="true">
+    <div class="modal-container glass-card">
+      <button class="modal-close-btn" id="modal-recharge-close" aria-label="Close modal">&times;</button>
+
+      <div class="modal-header text-center">
+        <div class="modal-icon-circle"><i class="fa-solid fa-shield-check"></i></div>
+        <h3>Confirm Your Recharge</h3>
+        <p>Please review transaction details before processing.</p>
+      </div>
+
+      <div class="modal-body">
+        <div class="confirm-summary-list">
+          <div class="confirm-row">
+            <span>Mobile Number:</span>
+            <strong id="confirm-phone">+92 300 1234567</strong>
+          </div>
+          <div class="confirm-row">
+            <span>Recharge Gross Amount:</span>
+            <strong id="confirm-amount">PKR 500.00</strong>
+          </div>
+          <div class="confirm-row text-muted">
+            <span>Government Taxes (15%):</span>
+            <span id="confirm-tax">- PKR 75.00</span>
+          </div>
+          <div class="confirm-row confirm-highlight">
+            <span>Net Balance Credited:</span>
+            <strong id="confirm-net">PKR 425.00</strong>
+          </div>
+          <div class="confirm-row">
+            <span>Payment Method:</span>
+            <strong id="confirm-method">Debit / Credit Card</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-ghost" id="modal-recharge-cancel">Cancel</button>
+        <button class="btn btn-primary" id="modal-recharge-confirm-btn">
+          <i class="fa-solid fa-check"></i>
+          <span id="recharge-btn-label">Confirm & Pay</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. EDIT PHONE NUMBER MODAL -->
+  <div class="modal-backdrop" id="phone-modal" role="dialog" aria-modal="true">
+    <div class="modal-container glass-card modal-sm">
+      <button class="modal-close-btn" id="modal-phone-close" aria-label="Close modal">&times;</button>
+
+      <div class="modal-header">
+        <h3>Update Registered Number</h3>
+        <p>Set a custom subscriber number to test personalized dashboard views.</p>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="edit-phone-input" class="form-label">New Mobile Number</label>
+          <input type="tel" id="edit-phone-input" class="form-control" placeholder="0300 1234567">
+          <span class="form-error-msg" id="edit-phone-error">Invalid phone format (must be 11 digits).</span>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-ghost" id="modal-phone-cancel">Cancel</button>
+        <button class="btn btn-primary" id="modal-phone-save">Save Number</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. SERVICE DETAILS MODAL -->
+  <div class="modal-backdrop" id="service-modal" role="dialog" aria-modal="true">
+    <div class="modal-container glass-card">
+      <button class="modal-close-btn" id="modal-service-close" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <div class="modal-service-icon" id="modal-service-icon"></div>
+        <h3 id="modal-service-title">5G Connectivity</h3>
+        <p id="modal-service-sub">Next-generation standalone infrastructure</p>
+      </div>
+      <div class="modal-body">
+        <p id="modal-service-desc" class="service-long-desc"></p>
+        <h4>Key Highlights</h4>
+        <ul id="modal-service-features" class="modal-perks-list"></ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="modal-service-done">Understood</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER (STACKABLE) -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- SCROLL TO TOP BUTTON -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+    <svg class="scroll-progress-ring" width="46" height="46">
+      <circle class="ring-bg" cx="23" cy="23" r="20" />
+      <circle class="ring-fill" id="scroll-ring-fill" cx="23" cy="23" r="20" />
+    </svg>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
